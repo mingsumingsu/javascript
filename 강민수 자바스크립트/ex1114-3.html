@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 객체</title>
+</head>
+<script>
+    function Student(name,stuNum,phonNum){
+        this.name=name;
+        this.stuNum=stuNum;
+        this.phonNum=phonNum;
+        this.avg=0;
+        this.tgrade="";
+        this.grade=function(score,cont){
+        this.ave=score/cont;
+        if(avg>90){
+        this.tgrade="A";
+    }
+    else if(avg>=80){
+        this.tgrade="B";
+    }
+    
+    else if(avg>=70){
+        this.tgrade="C"
+    }
+    else{
+        this.tgrade="F"
+    }
+    return this.tgrade;
+  }
+}
+</script>
+<body>
+    <h1>학생 프로토타입 만들고 사용해보기</h1>
+    <hr>
+    <script>
+        let Student=new Student("홍길동","111111","010-1111-2222")
+        document.write(student1.name+","+student1.stuNum+"의 성적은");
+        document.write(student1.grade(600,6)+"입니다.");   
+    </script>
+</body>
+</html>

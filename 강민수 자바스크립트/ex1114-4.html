@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function books(title,author,publisther,price){
+        this.title=title;
+        this.author=author;
+        this.publisther=publisther;
+        this.price=price;
+    }
+
+    this.lenNum=function(name){
+        document.write(name+"님이"+this.title+"을 대여했습니다.");
+    }
+    </script>
+</head>
+<body>
+    <script>
+        let student1=new books("홍길동전","허균","비전사",5000);
+        document.write(student1.title)
+        student1.lenNum("홍길동");
+    </script>
+</body>
+</html>
